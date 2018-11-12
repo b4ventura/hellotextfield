@@ -28,6 +28,7 @@ class SaveViewController: UIViewController {
     @IBAction func resetTitle(_ sender: Any) {
         // Reset Title to Default "Hello"
         titleField.text = "HELLO"
+        UserDefaults.standard.set(titleField.text, forKey: "Title")
         
         
     }
@@ -46,6 +47,7 @@ class SaveViewController: UIViewController {
     @IBAction func resetSubtitle(_ sender: Any) {
         // Reset Subtitle to Default "My Name Is"
         subtitleField.text = "My Name Is"
+        UserDefaults.standard.set(subtitleField.text, forKey: "Subtitle")
         
     }
     
